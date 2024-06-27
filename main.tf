@@ -109,7 +109,7 @@ resource "aws_security_group" "docker_sg" {
 }
 
 resource "aws_instance" "docker_ec2_pub1" {
-  ami           = "ami-04b70fa74e45c3917"
+  ami           = "ami-04b70fa74e45c37"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.docker_subnet_pub.id
   key_name      = "venkat_key2"
@@ -120,7 +120,7 @@ resource "aws_instance" "docker_ec2_pub1" {
 }
 
 resource "aws_instance" "docker_ec2_pub2" {
-  ami           = "ami-04b70fa74e45c3917"
+  ami           = "ami-04b70fa74ec3917"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.docker_subnet_pub.id
   key_name      = "venkat_key2"
@@ -131,7 +131,7 @@ resource "aws_instance" "docker_ec2_pub2" {
 }
 
 resource "aws_instance" "docker_ec2_pvt" {
-  ami           = "ami-04b70fa74e45c3917"
+  ami           = "ami-04b70fa74ec3917"
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.docker_subnet_pvt.id
   key_name      = "venkat_key2"
